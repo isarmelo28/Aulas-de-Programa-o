@@ -1,5 +1,5 @@
 # AULAS DE PROGRAMAÇÃO
 
-Olá!! Seja Bem-Vindo as minhas anotações de aulas sobre programação :wave:
+Olá !! Seja Bem-vindo as minhas anotações de aulas sobre programação :wave:
 
-- Linguagem de programação: Portugol 
+- Linguagem de Programação: Portugol 
