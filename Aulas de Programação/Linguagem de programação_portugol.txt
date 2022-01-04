@@ -1,0 +1,105 @@
+# Linguagem de programação 
+
+Pode ser definida como uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas, que podem ser distintas em dois níveis:
+
+- Alto nível - É o tipo de linguagem que se distancia da linguagem das máquinas;
+
+- Baixo nível - É o tipo de linguagem que se aproxima da linguagem das máquinas.    
+
+A linguagem que iremos detalhar é o Portugol que permite desenvolver algoritmos estruturados em português de forma relativamente mais simples e intuitiva. Dessa forma vamos conhecer alguns de seus comandos 
+
+#### Comando : se_senao
+
+Comando que permite estabelecer uma condição para que o código realize alguma ação. Exemplo:
+
+{
+	
+	funcao inicio()
+	{
+		real nota1,nota2,nota3,nota4,media
+		cadeia aluno
+		
+		escreva ("Digite o nome do aluno: ")
+		leia(aluno)
+		escreva ("Digite a nota1:")
+		leia(nota1)
+		escreva ("Digite a nota2:")
+		leia(nota2)
+		escreva ("Digite a nota3:")
+		leia(nota3)
+		escreva ("Digite a nota4:")
+		leia(nota4)
+	
+		media= ((nota1+nota2+nota3+nota4)/4)
+		escreva ("Sua média é:" + media)
+	
+	se (media>=7) {
+		escreva("\n" +"Parabèns você foi aprovado")
+	}
+	senao{
+		escreva("\n" + "você não foi aprovado, mas não desanime")
+	}
+	}
+}
+
+#### Comando: Caso
+
+Esse tipo de comando permitir com que a pessoa que está usando o código possa escolher alguma opção dentro dos casos existentes do algoritmo .Exemplo: 
+
+{
+	
+	funcao inicio()
+	{
+		escreva ("escreva uma das opções: 1-abrir netflix; 2-abrir amazon prime; 3-abrir HBO")
+		inteiro menu=0
+		escreva("\n" + "Faça sua escolha")
+		leia (menu)
+		
+		escolha (menu)
+		{
+			caso 1:
+			escreva("Ok!Abrir Netflix")
+			pare
+			caso 2:
+			escreva("OK! Abrir Amazon prime")
+			pare
+			caso 3:
+			escreva("OK! Abrir HBO")
+			pare
+			caso 4:
+			escreva("Escolha 1, 2 ou 3")
+			pare
+		}
+	}
+}
+
+
+
+#### Comando: Repetição
+
+É um tipo de comando que podemos utilizar quando queremos realizar uma ação diversas vezes até atingir o seu objetivo, como realizar a tabuada de um número até 1000,2000 ou até 10000 de forma rápida. Exemplo de código:
+
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro contador,limite, resultado, tabuada
+		
+		contador=0
+	
+		escreva("Qual tabuada você quer saber?")
+		leia(tabuada)
+		
+		escreva ("Qual limite que você quer saber dá sua tabuada?")
+		leia(limite)
+	
+		faca{
+			
+			resultado = tabuada *contador
+			escreva (tabuada + "x" + contador + "=" + resultado + "\n")
+			contador ++ //isso é a mesma coisa de dizer contador= contador +1
+		
+		}enquanto (contador <= limite)
+	}
+}
